@@ -29,7 +29,7 @@ SECRET_KEY = 'wegx8l-lwk*v^+lyx2v17nvsb#c6-oo4g0y-ss)ux_9tom8+uh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cmcpheat07.pythonanywhere.com']
 
 LOGIN_URL = 'rango:login'
 
