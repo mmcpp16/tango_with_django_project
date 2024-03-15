@@ -23,13 +23,19 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+key = None
+with open('secret.key') as f:
+    key = f.read().strip()
+    
+SECRET_KEY = key
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wegx8l-lwk*v^+lyx2v17nvsb#c6-oo4g0y-ss)ux_9tom8+uh'
+# SECRET_KEY = 'wegx8l-lwk*v^+lyx2v17nvsb#c6-oo4g0y-ss)ux_9tom8+uh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['cmcpheat07.pythonanywhere.com']
+ALLOWED_HOSTS = ['cmcpheat07.pythonanywhere.com', '127.0.0.1']
 
 LOGIN_URL = 'rango:login'
 
